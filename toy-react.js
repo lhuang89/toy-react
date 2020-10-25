@@ -31,7 +31,7 @@ export class Component {
         this.props[name] = value;
     }
     appendChild(component){
-        this.children.push[component];
+        this.children.push(component);
     }
 
     get root(){
