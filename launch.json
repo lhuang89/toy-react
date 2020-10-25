@@ -1,0 +1,10 @@
+{
+    "version": "0.2.0",
+    "configuration": {
+        "type":"chrome",
+        "request":"launch",
+        "name": "Launch Chrome on localhost",
+        "url": "http://localhost:8080",
+        "webRoot": "${workspaceFolder}"
+    }
+}
