@@ -11,8 +11,9 @@ class MyComponent extends Component{
     render() {
         return <div>
             <h1>My Compoennt</h1>
-    <span>{this.state.a.toString()}</span>
-            {this.children}
+            <button onclick={()=> {this.setState({a:this.state.a +1});}}>Add</button>
+            <span>{this.state.a.toString()}</span>
+            <span>{this.state.b.toString()}</span>
         </div>
     }
 
