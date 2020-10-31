@@ -73,7 +73,7 @@ export class Component {
                 let oldChild = oldChildren[i];
 
                 if (i < oldChildren.length){
-                    update(oldChild, newChildren);
+                    update(oldChild, newChild);
                 } else {
                     let range = document.createRange();
                     range.setStart(tailRange.endContainer, tailRange.endOffset);
