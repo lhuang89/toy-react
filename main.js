@@ -122,7 +122,7 @@ class Game extends Component {
 }
 
 // ========================================
-
+window.game =<Game />
 render(<Game />, document.getElementById("root"));
 
 //let game = <Game />;

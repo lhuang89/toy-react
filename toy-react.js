@@ -232,14 +232,6 @@ function replaceContent(range, node){
     range.setEndAfter(node);
 }
 
-export function render(compoment, parentElement) {
-    let range = document.createRange();
-    range.setStart(parentElement, 0);
-    range.setEnd(parentElement, parentElement.childNodes.length);
-    range.deleteContents();
-    compoment[RENDER_TO_DOM](range);
-}
-
 export function createElement(type, attributes, ...children) {
     let e;
 
@@ -275,4 +267,12 @@ export function createElement(type, attributes, ...children) {
     insertChildren(children);
 
     return e;
+}
+
+export function render(compoment, parentElement) {
+    let range = document.createRange();
+    range.setStart(parentElement, 0);
+    range.setEnd(parentElement, parentElement.childNodes.length);
+    range.deleteContents();
+    compoment[RENDER_TO_DOM](range);
 }
